@@ -1,3 +1,6 @@
+# What it is ?
+This repository will serve as a shared space for us to learn, discuss, and practice DSA concepts together. We'll share code examples for various data structures and algorithms.  We'll work on coding challenges to reinforce our understanding of DSA principles.
+
 # Purpose:
 
 - Centralized code storage: To store and organize all DSA-related code in a single location.
