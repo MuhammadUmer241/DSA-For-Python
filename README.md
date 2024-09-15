@@ -29,13 +29,19 @@ Replace <branch_name> with a descriptive name for the branch.  
 Make your changes to the code files in the new branch.
 ## Commit Changes:
 Stage your changes using 
-```git add <filename> ``` 
+```
+git add <filename>
+ ``` 
 and commit them using 
-```git commit -m "Your commit message"```
+```
+git commit -m "Your commit message"
+```
 
 ## Push Changes:
 Push your changes to the remote repository: 
-```git push origin <branch_name>```
+```
+git push origin <branch_name>
+```
 
 ## Changing Existing Branches:
 Switch to the desired branch:
