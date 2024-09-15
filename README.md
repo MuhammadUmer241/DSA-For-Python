@@ -28,8 +28,10 @@ Replace <branch_name> with a descriptive name for the branch.  
 ## Make Changes:
 Make your changes to the code files in the new branch.
 ## Commit Changes:
-Stage your changes using ```git add <filename> ``` 
-and commit them using ```git commit -m "Your commit message"```
+Stage your changes using 
+```git add <filename> ``` 
+and commit them using 
+```git commit -m "Your commit message"```
 
 ## Push Changes:
 Push your changes to the remote repository: 
