@@ -6,7 +6,6 @@ class Node:
         self.data= value # value of current node
         self.next= None # address of last node
 
-
 class linked_list:
     """
     contains methods used in linked list to insert delete , Find etc
