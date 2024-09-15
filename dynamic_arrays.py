@@ -67,7 +67,6 @@ class dynamic_array:
         print(self.n)
 
 
-
     def pop(self)->None:
         """
         Pop the last item
