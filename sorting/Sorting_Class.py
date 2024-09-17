@@ -1,5 +1,3 @@
-from logging.config import listen
-
 
 class Sorting:
     def __init__(self,array:list[int]):
@@ -42,6 +40,23 @@ class Sorting:
 
         return self.array
 
+    def quick_sort(self,array):
+        """
+
+        :param array:
+        :return:
+        """
+        if len(array) <= 1:
+            return array
+        pivot = array[0]
+
+        partition_left = [array[val] for val in range(len(array)) if array[val] < array[0]]
+        partition_right = [array[val] for val in range(len(array)) if array[val] > array[0]]
+
+        return self.quick_sort(partition_left) + [pivot] + self.quick_sort(partition_right)
+
+
+     
 
 
 
