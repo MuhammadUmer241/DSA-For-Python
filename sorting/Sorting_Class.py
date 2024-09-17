@@ -1,3 +1,5 @@
+from logging.config import listen
+
 
 class Sorting:
     def __init__(self,array:list[int]):
@@ -24,9 +26,25 @@ class Sorting:
 
         return self.array
 
+    def insertion_sort(self)->list[int]:
+        """
+
+        :return: sorted list
+        """
+
+        for i in range(1, len(self.array)):
+            key = self.array[i]
+            j = i - 1
+            while j >= 0 and self.array[j] > key:
+                self.array[j + 1] = self.array[j]
+                j -= 1
+            self.array[j + 1] = key
+
+        return self.array
 
 
 
 
-obj= Sorting([23,13,29,19,21])
-print(obj.bubble_sort())
+
+
+
