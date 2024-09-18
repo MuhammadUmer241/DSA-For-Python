@@ -29,7 +29,6 @@ class Sorting:
 
         :return: sorted list
         """
-
         for i in range(1, len(self.array)):
             key = self.array[i]
             j = i - 1
@@ -54,9 +53,27 @@ class Sorting:
         partition_right = [array[val] for val in range(len(array)) if array[val] > array[0]]
 
         return self.quick_sort(partition_left) + [pivot] + self.quick_sort(partition_right)
+    def selection_sort(self)->list[int]:
+        """
 
 
-     
+        :return: sorted array
+        """
+
+        for i in range(len(self.array)):
+            minimum = self.array[i]
+            pos = i
+            for x in range(pos, len(self.array)):
+                if self.array[x] < minimum:
+                    minimum = self.array[x]
+                    pos = x
+
+            self.array[pos] = self.array[i]
+            self.array[i] = minimum
+        return self.array
+
+
+
 
 
 
